@@ -10,11 +10,12 @@ npm install --save
 ``` 
 
 # Intialize
+Initialization of SSLCommerz class with store_id, store_passwd.
 ```sh
 const SSLCommerz = require('./sslcommerz/lib/sslecommerz');
 
 let settings = {
-    isSandboxMode: true, //false if live
+    isSandboxMode: true, //false if live version
     store_id: "storeid",
     store_passwd: "storepasswd"
 }
@@ -24,6 +25,7 @@ let sslcommerz = new SSLCommerz(settings);
 ```
 
 # Usage
+Basic Usage to intialize a transaction session.
 ```sh
 let post_body = {};
 post_body['total_amount'] = 100.26;
