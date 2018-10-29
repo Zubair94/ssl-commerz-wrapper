@@ -2,11 +2,15 @@
 Node.js wrapper for SSLCommerz API
 
 # Installation
-Download the project .zip, unzip and copy lib folder to your Node Project Directory 
+Download the project .zip, unzip and copy folder to your Node Project Directory.
+```sh
+cd sslcommerz
+npm install --save
+``` 
 
 # Intialize
 ```sh
-const SSLCommerz = require('./lib/sslecommerz');
+const SSLCommerz = require('./sslcommerz/lib/sslecommerz');
 
 let settings = {
     isSandboxMode: true, //false if live
@@ -21,17 +25,17 @@ let sslcommerz = new SSLCommerz(settings);
 # Usage
 ```sh
 let post_body = {};
-body['total_amount'] = 100.26;
-body['currency'] = "BDT";
-body['tran_id'] = "12345";
-body['success_url'] = "your success url";
-body['fail_url'] = "your fail url";
-body['cancel_url'] = "your cancel url";
-body['emi_option'] = 0;
-body['cus_name'] = "test";
-body['cus_email'] = "test@test.com";
-body['cus_phone'] = "01700000000";
-sslcommerz.init_session(post_body, (err, response, body) => {
+post_body['total_amount'] = 100.26;
+post_body['currency'] = "BDT";
+post_body['tran_id'] = "12345";
+post_body['success_url'] = "your success url";
+post_body['fail_url'] = "your fail url";
+post_body['cancel_url'] = "your cancel url";
+post_body['emi_option'] = 0;
+post_body['cus_name'] = "test";
+post_body['cus_email'] = "test@test.com";
+post_body['cus_phone'] = "01700000000";
+sslcommerz.init_transaction(post_body, (err, response, body) => {
     console.log(response);
     console.log(body);
 });
