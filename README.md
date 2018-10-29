@@ -1,6 +1,6 @@
 # SSLCommerz Node.js Wrapper
 Node.js wrapper for SSLCommerz API
-SSLCommerz Developer Page: https://developer.sslcommerz.com/
+<br/>SSLCommerz Developer Page: https://developer.sslcommerz.com/
 
 # Installation
 Download the project .zip, unzip and copy folder to your Node Project Directory.
