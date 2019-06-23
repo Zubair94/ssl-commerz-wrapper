@@ -1,5 +1,5 @@
 {
-  "name": "sslcommerz-wrapper",
+  "name": "sslcommerz-nodejs",
   "version": "1.0.0",
   "description": "SSLCommerz Nodej.s wrapper",
   "main": "index.js",
