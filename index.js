@@ -1,1 +1,1 @@
-module.exports = require('./lib/sslecommerz');
+export { default } from "./lib/sslecommerz";

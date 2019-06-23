@@ -1,5 +1,5 @@
 # SSLCommerz Node.js Wrapper
-Node.js wrapper for SSLCommerz API
+Node.js wrapper for SSLCommerz API Using Promises
 <br/>SSLCommerz Developer Page: https://developer.sslcommerz.com/
 
 # Installation
@@ -38,8 +38,9 @@ post_body['emi_option'] = 0;
 post_body['cus_name'] = "test";
 post_body['cus_email'] = "test@test.com";
 post_body['cus_phone'] = "01700000000";
-sslcommerz.init_transaction(post_body, (err, response, body) => {
+sslcommerz.init_transaction(post_body).then(response => {
     console.log(response);
-    console.log(body);
-});
+}).catch(error => {
+    console.log(error);
+})
 ```

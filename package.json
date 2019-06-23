@@ -1,7 +1,7 @@
 {
-  "name": "sslecommerz-wrapper",
+  "name": "sslcommerz-wrapper",
   "version": "1.0.0",
-  "description": "sslecommerz nodejs wrapper",
+  "description": "SSLCommerz Nodej.s wrapper",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,12 +15,13 @@
     "nodejs"
   ],
   "author": "Kazi Md. Zubair",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://gitlab.com/Zubair94/ssl-ecommerz-wrapper/issues"
   },
   "homepage": "https://gitlab.com/Zubair94/ssl-ecommerz-wrapper#readme",
   "dependencies": {
-    "request": "^2.88.0"
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4"
   }
 }
