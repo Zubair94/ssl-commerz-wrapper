@@ -3,7 +3,12 @@ Node.js wrapper for SSLCommerz API Using Promises
 <br/>SSLCommerz Developer Page: https://developer.sslcommerz.com/
 
 # Installation
-Download the project .zip, unzip and copy folder to your Node Project Directory.
+Clone the project from gitlab .zip, unzip and copy folder to your Node Project Directory.
+```sh
+git clone https://gitlab.com/Zubair94/ssl-ecommerz-wrapper.git
+``` 
+
+Using npm
 ```sh
 npm install --save sslcommerz-nodejs
 ``` 
