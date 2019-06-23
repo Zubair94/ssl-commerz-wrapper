@@ -1,2 +1,1 @@
-const SSLCommerz = require('./lib/sslecommerz');
-exports.SSLCommerz = SSLCommerz;
+exports = require('./lib/sslecommerz');
