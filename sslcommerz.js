@@ -12,7 +12,7 @@ class SSLCommerz{
         this.store_mode = this.setSSLCommerzMode((typeof config.isSandboxMode === "undefined") ? true : config.isSandboxMode);
         this.store_id = config.store_id;
         this.store_passwd = config.store_passwd;
-        this.submit_url = "https://" + this.store_mode + ".sslcommerz.com/gwprocess/v3/api.php";
+        this.submit_url = "https://" + this.store_mode + ".sslcommerz.com/gwprocess/v4/api.php";
         this.validation_url = "https://" + this.store_mode + ".sslcommerz.com/validator/api/validationserverAPI.php";
         this.transaction_url = "https://" + this.store_mode + ".sslcommerz.com/validator/api/merchantTransIDvalidationAPI.php"
     }

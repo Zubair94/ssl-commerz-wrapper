@@ -37,6 +37,15 @@ post_body['emi_option'] = 0;
 post_body['cus_name'] = "test";
 post_body['cus_email'] = "test@test.com";
 post_body['cus_phone'] = "01700000000";
+post_body['cus_add1'] = "customer address";
+post_body['cus_city'] = "Dhaka";
+post_body['cus_country'] = "Bangladesh";
+post_body['shipping_method'] = "NO";
+post_body['multi_card_name'] = ""
+post_body['num_of_item'] = 1;
+post_body['product_name'] = "Test";
+post_body['product_category'] = "Test Category";
+post_body['product_profile'] = "general";
 sslcommerz.init_transaction(post_body).then(response => {
     console.log(response);
 }).catch(error => {
