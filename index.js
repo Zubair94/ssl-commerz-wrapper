@@ -1,1 +1,1 @@
-export { default } from "./lib/sslecommerz";
+export { SSLCommerz } from "./lib/sslecommerz";
