@@ -1,8 +1,8 @@
 {
   "name": "sslcommerz-nodejs",
-  "version": "1.0.1",
-  "description": "SSLCommerz Nodej.s wrapper",
-  "main": "index.js",
+  "version": "1.0.3",
+  "description": "SSLCommerz Node.js wrapper",
+  "main": "sslcommerz.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
