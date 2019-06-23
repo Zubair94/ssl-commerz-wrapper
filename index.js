@@ -1,1 +1,2 @@
-export { SSLCommerz } from "./lib/sslecommerz";
+const SSLCommerz = require('./lib/sslecommerz');
+exports.SSLCommerz = SSLCommerz;
