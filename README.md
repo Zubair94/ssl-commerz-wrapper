@@ -5,14 +5,13 @@ Node.js wrapper for SSLCommerz API Using Promises
 # Installation
 Download the project .zip, unzip and copy folder to your Node Project Directory.
 ```sh
-cd sslcommerz
-npm install --save
+npm install --save sslcommerz-nodejs
 ``` 
 
 # Intialize
 Initialization of SSLCommerz class with store_id, store_passwd.
 ```sh
-const SSLCommerz = require('./sslcommerz/lib/sslecommerz');
+const SSLCommerz = require('sslcommerz-nodejs');
 
 let settings = {
     isSandboxMode: true, //false if live version
