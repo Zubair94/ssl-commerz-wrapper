@@ -1,6 +1,6 @@
 {
   "name": "sslcommerz-nodejs",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "SSLCommerz Node.js wrapper",
   "main": "sslcommerz.js",
   "scripts": {
