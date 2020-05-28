@@ -1,6 +1,6 @@
 'use strict';
 const crypto = require('crypto');
-const request = require('request-promise');
+const got = require('got');
 
 class SSLCommerz{
     /**
@@ -136,23 +136,28 @@ class SSLCommerz{
             return 'securepay';
         }
     }
-    async request(method, url, query, post_body){
+    async request(method, url, urlParams, post_body){
         try{
             let params = {
-                url: url,
                 method: method || 'GET',
-                qs: query,
-                form: post_body,
-                json: true
+                form:  post_body ,
+                responseType: 'json'
             };
-            let response = await request(params);
-            return response;
+            params.searchParams = urlParams ? urlParams : undefined;
+            params.form = post_body ? post_body : undefined;
+            const response = await got(url, params);
+            return response.body;
         } catch(error){
-            return error.error;
+            return error.response.body;
         }
     }
     async get(url, query) {
-        return this.request('GET', url, query, null);
+        let queryParams = [];
+        Object.keys(query).forEach(key => {
+            queryParams.push([key, query[key]]);
+        });
+        const urlParams = new URLSearchParams(queryParams);
+        return this.request('GET', url, urlParams, null);
     }
     async post(url, post_body){
         return this.request('POST', url, null, post_body);

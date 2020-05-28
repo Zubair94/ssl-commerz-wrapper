@@ -1,6 +1,6 @@
 {
   "name": "sslcommerz-nodejs",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "SSLCommerz Node.js wrapper",
   "main": "sslcommerz.js",
   "scripts": {
@@ -21,7 +21,6 @@
   },
   "homepage": "https://github.com/Zubair94/ssl-commerz-wrapper/blob/master/README.md",
   "dependencies": {
-    "request": "^2.88.0",
-    "request-promise": "^4.2.5"
+    "got": "^11.1.4"
   }
 }
