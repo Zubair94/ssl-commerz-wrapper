@@ -4,7 +4,8 @@
   "description": "SSLCommerz Node.js wrapper",
   "main": "sslcommerz.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc test.ts"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,8 @@
   "homepage": "https://github.com/Zubair94/ssl-commerz-wrapper/blob/master/README.md",
   "dependencies": {
     "got": "^11.1.4"
+  },
+  "devDependencies": {
+    "typescript": "^4.2.3"
   }
 }
